@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background: rgb(82, 184, 92);
+    overflow:hidden;
+}
+body { 
+}
+/*Global Styles*/
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*Login Page Styles*/
+.frontPage {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Settings*/
+#settings {
+    display: none;
+}
+/*Chat Room Styles*/
+#chatRoom {
+    background: rgb(230,230,230);
+    height: 100%;
+    display: flex;
+}
+.chatArea {
+    margin: 40px 10px 60px 0;
+    height: auto;
+    overflow-y: scroll;
+    width: 70%;
+    word-wrap: break-word;
+}
+#chatField {
+    position: fixed;
+    bottom: 10px;
+    width: 70%;
+    text-align:center;
+}
+.currentUser {
+    color: blue;
+}
+#m {
+    width: 85%;
+    text-decoration: none;
+}
+.chatArea::-webkit-scrollbar {
+    width: 12px;
+}
+.chatArea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+.chatArea::-webkit-scrollbar-thumb {
+    background: rgb(19, 32, 82);
+}
+.usersArea {
+    padding-top: 40px;
+    color: white;
+    width: 30%;
+    text-align: center;
+    background: rgb(21, 21, 65);
+}
+#users {
+    list-style-type: none;
+    padding: 0;
+}
+#whatsapp {
+    width: 200px;
+    height: auto;
+    text-align:center;
+}
+
+#messages {
+    list-style-type: none;
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width:767px){
+    #settings{
+        position: fixed;
+        top: 0;
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .userNumber {
+        margin: 20px;
+    }
+    .chatArea {
+        width: 100%;
+    }
+    #chatField {
+        width: 100%;
+    }
+    #m {
+        width: 70%;
+    }
+    .usersArea{
+        display: none;
+    }
+}
